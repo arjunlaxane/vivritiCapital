@@ -13,29 +13,9 @@ const employeeRoutes = require('./route/employeeRoute');
 app.use('/api/v1', employeeRoutes);
 
 app.get('/', (req, res) => {
-  res.status(200).json({
-    message: `
-    Employee data : 
-     _id (unique for every Employee)
-    first_Name
-    last_Name
-    mobile_Number
-    Address
-    Departmen
-    
-    API: https://vivriticapital.herokuapp.com/ 
-    
-    API Endpoints:
-
-    1. Registration : https://vivriticapital.herokuapp.com/api/v1/register
-
-    2. List of all employees : https://vivriticapital.herokuapp.com/api/v1 
-    
-    3. Update and Delete employee : https://vivriticapital.herokuapp.com/api/v1/:id
-    
-    
-    `,
-  });
+  res
+    .status(200)
+    .json('Hello, I am Arjun Dilip Laxane from Guvi-Zen Institute');
 });
 
 app.listen(PORT, () => {
