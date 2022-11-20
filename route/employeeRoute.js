@@ -16,10 +16,10 @@ router.route('/register').post(registerEmployee);
 
 //get All employees
 
-router.route('/').get(getAllEmployee);
+router.route('/employees').get(getAllEmployee);
 
 // update and delete employee
 
-router.route('/:id').put(updateEmployee).delete(deleteEmployee);
+router.route('/employee/:id').put(updateEmployee).delete(deleteEmployee);
 
 module.exports = router;
