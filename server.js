@@ -15,9 +15,7 @@ app.use('/', employeeRoutes);
 app.get('/', (req, res) => {
   res
     .status(200)
-    .json(
-      `Hello, I am Arjun Dilip Laxane from Guvi-Zen Institute. \n\n\n\n Registeration API: https://vivriticapital.herokuapp.com/register , \n\n\n List of all employees API: https://vivriticapital.herokuapp.com/employees , \n\n\n Update and Delete API: https://vivriticapital.herokuapp.com/employee/:id`
-    );
+    .json(`Hello, I am Arjun Dilip Laxane from Guvi-Zen Institute.`);
 });
 
 app.listen(PORT, () => {
