@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 4002;
 
 //imports routes
 const employeeRoutes = require('./route/employeeRoute');
-app.use('/api/v1', employeeRoutes);
+app.use('/', employeeRoutes);
 
 app.get('/', (req, res) => {
   res
